@@ -12,17 +12,21 @@ def get_random_color():
 if __name__ == '__main__':
     window = turtle.Screen()
     window.bgcolor('white')
-    
+
     # Make a new turtle
-    
+    jturtle = turtle.Turtle()
     # This code sets our shape to a turtle
-    
+    jturtle.shape('turtle')
     # Set your turtle's speed (0=fastest, 1=slowest, 10=faster)
-    
+    jturtle.speed(0)
     # Set your turtle's color using .color('green')
-    
+    jturtle.color('green')
     # Use a loop to repeat a the code below 50 times
-        
+    for i in range(50):
+        jturtle.color(get_random_color())
+        jturtle.forward(5*i)
+        jturtle.right(360/7)
+        jturtle.width(i)
         # Set the turtle color to a random color
 
         # Move the turtle (5*i) pixels. 'i' is the loop variable
